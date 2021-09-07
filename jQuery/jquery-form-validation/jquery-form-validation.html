@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Validation</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src = "jquery-form-validation.js"></script>
+    <link rel = "stylesheet" href ="jquery-form-validation.css" type ="text/css">
+</head>
+
+<body>
+    <!--Agregar formulario-->
+    <form id = "form" action="/my-handling-form-page" method="post">
+        <ul>
+            <li>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name">
+            </li>
+            <li>
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" name="user_email">
+            </li>
+            <li>
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="user_message"></textarea>
+            </li>
+            <li class = "button">
+                <button id = 'btn-submit' type="submit">Send your message</button>
+            </li>
+        </ul>
+    </form>
+
+    <script>
+
+    </script>
+
+</body>
+
+</html>

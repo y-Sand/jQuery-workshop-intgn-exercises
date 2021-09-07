@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>All Notes</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="admin-notes-jquery.js"></script>
+    <script src = "jquery-form-validation.js"></script>
+    <link rel = "stylesheet" href ="jquery-form-validation.css" type ="text/css">
+
+</head>
+
+<body>
+    <div>
+        
+        <div>
+            <h3>+ New note</h3>
+            <!--Formulario-->
+            <form id="form" method = "post">
+            <ul>
+                <li>
+                    <label for="title">Title: </label>
+                    <input type="text" id="txt-title" name="note_title">
+                </li>
+                <li>
+                    <label for="content">Content: </label>
+                    <input type="content" id="txt-content" name="note_content">
+                </li>
+                <li class="button">
+                    <button id='btn-addnote' type="submit">Add note +</button>
+                </li>
+            </ul>
+            </form>
+        </div>
+    </div>
+    <br>
+    <h2>All notes</h2>
+    <br>
+    <table id="notes-table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Content</th>
+                <th>Modify</th>
+            </tr>
+        </thead>
+        <tbody id="notes-tbody">
+
+        </tbody>
+    </table>
+
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Intro JQuery</title>
+</head>
+
+<body>
+    <p id = "parrafo1" clave="123"> Este es un p HTML </p>
+
+    <script src = "https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <script>
+        $(()=>{
+            alert($('#parrafo1')[0].getAttribute("clave"));
+            alert($('p')[2].getAttribute("clave"));
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Intro JQuery</title>
+</head>
+
+<body>
+    <p id = "parrafo1"> Este es un paraffo HTML </p>
+
+    <!--Podriamos ref la libreria descargada o el URL-->
+    <script src = "https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <script>
+        // cargamos el doc y consideramos las funciones que tiene en su interior
+        $(document).ready(function(){
+            $("#parrafo1").click(function(){
+                $(this).hide();
+            });
+        });
+        // como funcion anonima 
+        $(() => {
+            $("#parrafo1").click(function(){
+                $(this).hide();
+            });
+        });
+    </script>
+</body>
+
+</html>
